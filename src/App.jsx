@@ -53,7 +53,7 @@ class App extends React.Component {
         .catch(() => {
           this.setState({ route: 'search', alert: 'No City Found', loading: false });
         });
-    }, 3000); // 3-second delay for testing
+    }, 1000); // 3-second delay for testing
   }
 
   onSearchButton = (event) => {
@@ -98,7 +98,7 @@ class App extends React.Component {
               />
             </div>
           ) : (
-            <div className="mt-4 text-red-500">{alert}</div>
+            <div className="text-red-500 text-center">{alert}</div>
           )}
         </div>
       </div>
